@@ -1666,6 +1666,10 @@ a.middle:hover:before {
 
 .crafting-volant {
   padding: 40vh 10.4vw 55vh;
+  /* The global "will-change: transform" on sections traps the fixed
+     background video inside this section; reset it so the video
+     stays pinned to the viewport. */
+  will-change: auto;
 }
 
 .crafting-volant .video {
